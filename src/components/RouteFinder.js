@@ -22,7 +22,7 @@ const RouteFinder = () => {
         const places = routesData[jeepCode]; // Getting places for the current jeep code
         result.push(
           <React.Fragment key={jeepCode}>
-            <span className="jeepney-code">{jeepCode}</span> => {places.map(place => highlightPlace(place, jeepCode, commonRoutes, colorMappings)).reduce((prev, curr) => [prev, ' <-> ', curr])}
+            <span className="jeepney-code">{jeepCode}</span> ➜ {places.map(place => highlightPlace(place, jeepCode, commonRoutes, colorMappings)).reduce((prev, curr) => [prev, ' <-> ', curr])}
             {/* Mapping and highlighting places for the current jeep code */}
           </React.Fragment>
         );
