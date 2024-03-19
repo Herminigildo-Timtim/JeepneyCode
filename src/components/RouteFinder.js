@@ -22,7 +22,7 @@ const RouteFinder = () => {
         const places = routesData[jeepCode]; // Getting places for the current jeep code
         result.push(
           <React.Fragment key={jeepCode}>
-            {jeepCode} => {places.map(place => highlightPlace(place, jeepCode, commonRoutes, colorMappings)).reduce((prev, curr) => [prev, ' <-> ', curr])}
+            <span className="jeepney-code">{jeepCode}</span> => {places.map(place => highlightPlace(place, jeepCode, commonRoutes, colorMappings)).reduce((prev, curr) => [prev, ' <-> ', curr])}
             {/* Mapping and highlighting places for the current jeep code */}
           </React.Fragment>
         );
@@ -72,7 +72,7 @@ const RouteFinder = () => {
     const commonTo = commonRoutes[place] && commonRoutes[place].filter(code => code !== currentJeepCode); // Getting jeep codes common to the place
     if (commonTo && commonTo.length > 0) { // Checking if common routes exist for the place
       const color = colorMappings[`${currentJeepCode},${commonTo[0]}`]; // Getting color for highlighting
-      return <span className="highlighted" style={{ backgroundColor: color }}>{place}</span>; // Highlighting place with specified color
+      return <span className="highlighted" style={{ color: color, fontWeight: 'bold',fontStyle: 'italic' }}>{place}</span>; // Changing font color with specified color
     }
     return place; // Returning unhighlighted place if no common routes
   };
@@ -87,7 +87,7 @@ const RouteFinder = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container"> 
       <input
         className="input-field"
         type="text"
@@ -102,4 +102,3 @@ const RouteFinder = () => {
 };
 
 export default RouteFinder;
-    
