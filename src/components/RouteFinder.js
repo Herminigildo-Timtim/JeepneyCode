@@ -87,18 +87,22 @@ const RouteFinder = () => {
   };
 
   return (
-    <div className="container"> 
-      <input
-        className="input-field"
-        type="text"
-        value={input}
-        onChange={handleInputChange}
-        placeholder="Enter Jeep Codes separated by comma"
-      />
-      <button className="find-button" onClick={findRoutes}>Find Routes</button>
-      <div className="output">{output}</div> {/* Displaying output */}
+    <div className='cont'>
+        <div className="container">
+        <h1>Jeep Route Finder</h1>
+        <input
+            className="input-field"
+            type="text"
+            value={input}
+            onChange={handleInputChange}
+            placeholder="Enter Jeep Codes separated by comma"
+        />
+        <button className="find-button" onClick={findRoutes}>Find Routes</button>
+        <div className="output">{output}</div> {/* Displaying output */}
+        </div>
     </div>
   );
+  
 };
 
 export default RouteFinder;

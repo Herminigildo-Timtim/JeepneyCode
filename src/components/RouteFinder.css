@@ -1,11 +1,26 @@
-.container {
+.cont {
+    background-color: #131318;
+    min-height: 200vh; /* Ensures that the background color fills the entire viewport height */
+  }
+  
+  .container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto; /* Centering the container horizontally */
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #444447; /* Midnight color */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333; /* Default text color */
+    color: #ccc; /* Default text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .container h1 {
+    text-align: center;
+    color: #fff; /* Header text color */
+    margin-bottom: 20px;
   }
   
   .container .jeepney-code {
@@ -17,8 +32,14 @@
     width: calc(100% - 100px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #666; /* Input field border color */
     border-radius: 5px;
+    background-color: #1e1e24; /* Input field background color */
+    color: #ccc; /* Input field text color */
+  }
+  
+  .input-field::placeholder {
+    color: #666; /* Placeholder text color */
   }
   
   .find-button {
@@ -38,8 +59,7 @@
   .output {
     margin-top: 20px;
     white-space: pre-wrap;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: 1px solid #666; /* Output border color */
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -49,6 +69,6 @@
     padding: 2px 4px;
     border-radius: 4px;
     background-color: #333230;
-    color: #333;
+    color: #ccc; /* Highlighted text color */
   }
   
