@@ -1,0 +1,17 @@
+{
+    "01A": ["Alpha", "Bravo", "Charlie", "Echo", "Golf"],
+    "02B": ["Alpha", "Delta", "Echo", "Foxtrot", "Golf"],
+    "03C": ["Charlie", "Delta", "Foxtrot", "Hotel", "India"],
+    "04A": ["Charlie", "Delta", "Echo", "Foxtrot", "Golf"],
+    "04D": ["Charlie", "Delta", "Echo", "Foxtrot", "Hotel"],
+    "06B": ["Delta", "Hotel", "Juliet", "Kilo", "Lima"],
+    "06D": ["Delta", "Echo", "Foxtrot", "Hotel", "Lima"],
+    "10C": ["Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo"],
+    "10H": ["Foxtrot", "Golf", "Hotel", "Juliet", "Kilo", "Lima"],
+    "11A": ["Foxtrot", "Golf", "India", "Juliet", "Kilo", "Lima"],
+    "11B": ["Foxtrot", "Golf", "India", "Juliet", "Kilo", "Lima"],
+    "20A": ["Hotel", "India", "Juliet", "Kilo", "Lima"],
+    "20C": ["India", "Juliet", "Kilo", "Lima"],
+    "42C": ["Charlie", "Delta", "Echo", "Foxtrot", "Hotel"],
+    "42D": ["Charlie", "Echo", "Foxtrot", "Hotel", "India"]
+  } 

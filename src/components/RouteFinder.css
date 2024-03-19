@@ -1,0 +1,30 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .input-field {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .find-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+  }
+  
+  .highlighted {
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
